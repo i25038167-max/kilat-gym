@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><style>
+body{margin:0;padding:30px;background:#fff;font-family:Arial,sans-serif;color:#333;width:1240px}
+h1{font-size:22px;margin:0 0 4px}.sub{margin:0 0 20px;color:#777;font-size:13px}
+.wrap{display:flex;gap:40px;align-items:flex-start}
+.page{border:2px solid #333;background:#fafafa}
+.desk{width:820px}.mob{width:300px}
+.b{border:2px dashed #888;margin:10px;padding:8px;font-size:12px;position:relative;background:#fff}
+.x{background:repeating-linear-gradient(45deg,#eee 0 10px,#fff 10px 20px);display:flex;align-items:center;justify-content:center;color:#666;font-weight:bold}
+.row{display:flex;gap:10px;margin:10px}.row>.b{margin:0;flex:1}
+.lab{font-weight:bold;font-size:11px;color:#c00;text-transform:uppercase}
+.big{font-size:26px;font-weight:bold;color:#333;line-height:1.1}
+.note{font-size:11px;color:#c00;margin-top:4px}
+.bar{height:10px;background:#ccc;margin:5px 0;width:80%}.bar.s{width:50%}
+.btn{display:inline-block;border:2px solid #333;padding:4px 10px;margin:4px 4px 0 0;font-size:11px}
+</style></head><body>
+<h1>KILAT GYM — Homepage Wireframe (one landing page)</h1>
+<p class="sub">Desktop (left) and phone layout (right). Grey striped boxes = images/video. Red notes = design decisions.</p>
+<div class="wrap">
+<div class="page desk">
+  <div class="b"><span class="lab">Header (sticky)</span><div class="row" style="margin:6px 0 0"><div class="b" style="flex:.4">⚡ LOGO</div><div class="b">01 Home | 02 About | 03 Services | 04 Contact</div></div><div class="note">Black bar, green bottom border. Links jump to section IDs.</div></div>
+  <div class="b"><span class="lab">#home — Hero (black)</span>
+    <div class="row"><div class="b"><div class="btn">tag</div><div class="big">TRAIN LIKE<br>LIGHTNING.</div><div class="bar"></div><div class="bar s"></div><span class="btn">Book free trial</span><span class="btn">See classes</span></div>
+    <div class="b x" style="height:170px">HERO IMAGE<br>+ rotated sticker</div></div></div>
+  <div class="row" style="margin:10px"><div class="b">[icon] 24/7</div><div class="b">[icon] 1,200+</div><div class="b">[icon] 15 coaches</div></div>
+  <div class="b"><span class="lab">#about</span> <b>[02] ABOUT US</b>
+    <div class="row"><div class="b x" style="height:120px">IMAGE</div><div class="b"><div class="bar"></div><div class="bar"></div><div class="bar s"></div>① point<br>② point<br>③ point</div></div>
+    <div class="b x" style="height:130px;margin:10px">EMBEDDED VIDEO (controls)</div></div>
+  <div class="b"><span class="lab">#services (black)</span> <b>[03] CLASSES</b>
+    <div class="row"><div class="b"><div class="x" style="height:60px">IMG</div>title / text / time</div><div class="b"><div class="x" style="height:60px">IMG</div>title / text / time</div><div class="b"><div class="x" style="height:60px">IMG</div>title / text / time</div></div>
+    <b style="margin-left:10px">[03] MEMBERSHIPS</b>
+    <div class="row"><div class="b">Plan · RM · list</div><div class="b" style="border-color:#c00">★ Featured plan</div><div class="b">Plan · RM · list</div></div></div>
+  <div class="b"><span class="lab">#contact</span> <b>[04] CONTACT</b>
+    <div class="row"><div class="b">[icon] address<br>[icon] phone<br>[icon] email<br>[icon] hours</div><div class="b">Name [______]<br>Email [______]<br>Plan [▼]<br>Message [______]<br><span class="btn">Send</span></div></div></div>
+  <div class="b">Footer: logo · © · back to top</div>
+</div>
+<div class="page mob">
+  <div class="b" style="text-align:center">⚡ LOGO<br><span class="btn">01</span><span class="btn">02</span><span class="btn">03</span><span class="btn">04</span><div class="note">Nav wraps under logo</div></div>
+  <div class="b"><div class="big" style="font-size:20px">TRAIN LIKE LIGHTNING.</div><div class="bar"></div><span class="btn">Button</span><span class="btn">Button</span><div class="x" style="height:110px;margin-top:8px">HERO IMAGE</div></div>
+  <div class="b">[icon] stat<br>[icon] stat<br>[icon] stat<div class="note">Stats stack</div></div>
+  <div class="b"><b>ABOUT</b><div class="x" style="height:70px">IMAGE</div><div class="bar"></div><div class="x" style="height:70px;margin-top:6px">VIDEO</div></div>
+  <div class="b"><b>CLASSES</b><div class="x" style="height:50px">CARD 1</div><div class="x" style="height:50px;margin-top:4px">CARD 2</div><div class="x" style="height:50px;margin-top:4px">CARD 3</div><div class="note">Grid → 1 column below 850px</div></div>
+  <div class="b"><b>PLANS</b> stacked ×3</div>
+  <div class="b"><b>CONTACT</b> info, then form</div>
+  <div class="b">Footer</div>
+</div>
+</div></body></html>

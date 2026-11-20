@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><style>
+@font-face{font-family:'Anton';src:url('../fonts/anton.woff2')}
+@font-face{font-family:'Archivo';src:url('../fonts/archivo-400.woff2');font-weight:400}
+@font-face{font-family:'Archivo';src:url('../fonts/archivo-800.woff2');font-weight:800}
+@page{size:A4;margin:14mm}
+body{font-family:'Archivo',Arial,sans-serif;color:#0E0E0E;margin:0;font-size:13px;line-height:1.5}
+h1{font-family:Anton;font-weight:400;font-size:40px;margin:0;text-transform:uppercase}
+h2{font-family:Anton;font-weight:400;font-size:24px;text-transform:uppercase;margin:26px 0 10px;border-bottom:4px solid #0E0E0E}
+.sub{margin:0 0 6px;color:#555}
+.sw{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.c{border:3px solid #0E0E0E}.c div{height:80px}.c p{margin:0;padding:6px 8px;font-size:11px}
+.c b{display:block;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:12px}td,th{border:2px solid #0E0E0E;padding:6px 8px;text-align:left;vertical-align:top}th{background:#C6FF00}
+.anton{font-family:Anton;font-size:46px;line-height:1}
+.ar{font-family:Archivo;font-size:16px}
+.box{border:3px solid #0E0E0E;padding:12px;margin-bottom:10px}
+ul{margin:4px 0;padding-left:18px}
+</style></head><body>
+<h1>KILAT GYM — Design Plan</h1>
+<p class="sub">ICT2215 Assessment 2 · Theme: Fitness Centre · Style: Neo-brutalism / gym poster</p>
+
+<h2>1. Target audience</h2>
+<p>University students and young working adults (18–30) in Cyberjaya who want an affordable, no-nonsense gym that is open late. They mostly browse on their phones, so the layout must work well on small screens. The look is loud and energetic, like a gig poster, to stand out from the calm, glossy style most gyms use.</p>
+
+<h2>2. Colour palette</h2>
+<div class="sw">
+ <div class="c"><div style="background:#0E0E0E"></div><p><b>Ink</b>#0E0E0E<br>Backgrounds, borders, hard shadows</p></div>
+ <div class="c"><div style="background:#C6FF00"></div><p><b>Volt</b>#C6FF00<br>Main accent: buttons, highlights, numbers</p></div>
+ <div class="c"><div style="background:#FF4D1C"></div><p><b>Flame</b>#FF4D1C<br>Second accent: tags, video box, badge</p></div>
+ <div class="c"><div style="background:#F4F1E8"></div><p><b>Paper</b>#F4F1E8<br>Light sections, text on black</p></div>
+ <div class="c"><div style="background:#2A2A2A"></div><p><b>Grey</b>#2A2A2A<br>Class cards on dark section</p></div>
+</div>
+<p>Why: volt green on black gives very strong <b>contrast</b> and feels like electricity ("kilat" = lightning). Orange is used only as a small second accent so it does not compete. Sections alternate black and paper so the page has a clear rhythm.</p>
+
+<h2>3. Typography</h2>
+<table>
+<tr><th>Role</th><th>Font</th><th>Sample</th><th>Settings</th></tr>
+<tr><td>Headings (h1, h2, h3), prices, stats</td><td>Anton (Google Fonts, free OFL)</td><td><span class="anton">TRAIN LIKE LIGHTNING</span></td><td>Uppercase, weight 400, h1 3–7.5rem (clamp), h2 2.5–4.5rem</td></tr>
+<tr><td>Body text, nav, buttons, form labels</td><td>Archivo (Google Fonts, free OFL)</td><td><span class="ar">Heavy iron, loud music and real coaching.</span><br><b class="ar">BOOK A FREE TRIAL</b></td><td>Body 1.05rem, line-height 1.6; buttons/labels weight 800 uppercase</td></tr>
+</table>
+<p>Why: Anton is tall and condensed, so big words fit and feel powerful, like gym posters. Archivo is a clean sans-serif that stays easy to read at small sizes. Only two fonts are used to keep typography consistent.</p>
+
+<h2>4. CRAP design principles</h2>
+<div class="box"><b>Contrast:</b> black vs volt green; huge Anton headings vs small body text; featured plan in green vs other plans in paper.</div>
+<div class="box"><b>Repetition:</b> same 4px black border + hard shadow on images, cards, video and form; numbered section titles (02, 03, 04) repeat the nav numbers; same icon box style.</div>
+<div class="box"><b>Alignment:</b> every section uses the same 5% side padding and CSS grid, so text and images line up on one left edge.</div>
+<div class="box"><b>Proximity:</b> related items are grouped: class image + title + time in one card; each icon sits next to its contact detail; form label right above its input.</div>
+
+<h2>5. Responsive plan</h2>
+<ul><li>Below 850px: all grids become one column; stats stack; nav wraps under the logo.</li>
+<li>Images and video use <code>max-width:100%</code> so they shrink to fit; no sideways scrolling.</li></ul>
+</body></html>
